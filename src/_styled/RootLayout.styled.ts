@@ -1,6 +1,6 @@
-"use client";
-import styled from "styled-components";
-import { StyledStripe, StyledStripeContent } from "@/_styled/UI/Stripe";
+'use client';
+import styled from 'styled-components';
+import { StyledStripe, StyledStripeContent } from '@/_styled/UI/Stripe';
 
 const StyledRootLayout = styled.div`
   min-height: 100vh;
@@ -22,7 +22,7 @@ const StyledRootLayout = styled.div`
     width: 100%;
     height: var(--menu-ht);
     background-color: var(--white);
-    content: "";
+    content: '';
   }
 `;
 

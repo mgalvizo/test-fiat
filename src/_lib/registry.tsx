@@ -1,7 +1,7 @@
-"use client";
-import { useState, ReactNode } from "react";
-import { useServerInsertedHTML } from "next/navigation";
-import { ServerStyleSheet, StyleSheetManager } from "styled-components";
+'use client';
+import { useState, ReactNode } from 'react';
+import { useServerInsertedHTML } from 'next/navigation';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
 interface StyledComponentsRegistryProps {
   children?: ReactNode;
@@ -22,7 +22,7 @@ const StyledComponentsRegistry = ({
     return <>{styles}</>;
   });
 
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     return <>{children}</>;
   }
 

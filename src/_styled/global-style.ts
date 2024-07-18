@@ -1,14 +1,12 @@
-"use client";
-import { createGlobalStyle } from "styled-components";
+'use client';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 :root {
     --max-design-width: 1024px;
     --base-fsz: 62.5%;
     --body-ffam: var(--font-lato);
-    --body-fsz-s: 1.0rem;
-    --body-fsz-m: 1.1rem;
-    --body-fsz-l: 1.2rem;
+    --body-fsz: 1.1rem;
     --body-lht: 1.5;
     --regular: 400;
     --bold: 700;
@@ -21,10 +19,16 @@ const GlobalStyle = createGlobalStyle`
     --gradient: linear-gradient(170deg, var(--blue) 0%, var(--blue) 55%, var(--red) 55%, var(--red) 100%);
     /* HEADINGS */
     --heading-ffam: var(--font-playfair_display);
-    --heading-fsz-s: 1.4rem;
-    --heading-fsz-m: 1.8rem;
-    --heading-fsz-l: 2rem;
-    --heading-lht: 1.5;
+    --heading-fsz-1: 1.1rem;
+    --heading-fsz-2-s: 1.1rem;
+    --heading-fsz-2-m: 1.2rem;
+    --heading-fsz-3-s: 4.0rem;
+    --heading-fsz-3-m: 7.7rem;
+    --heading-fsz-3-l: 11.0rem;
+    --heading-lht: 1;
+    --h2-dec-line-wt-m: 64px;
+    --h2-dec-line-wt-l: 55px;
+    --h2-dec-line-ht-m: 1px;
     /* SPACING */
     --web-padding-xs: 4px;
     --web-padding-s: 8px;
@@ -44,7 +48,10 @@ const GlobalStyle = createGlobalStyle`
     --hamburguer-icon-ht: 15px;
     --hamburguer-bar-wt: 18px; 
     --hamburguer-bar-ht: 3px; 
-    --logo-sz: 119px;  
+    --logo-sz: 119px;
+    --car-i-wt-s: 234px;  
+    --car-i-wt-m: 388px;  
+    --car-i-wt-l: 468px;  
     /* MEDIA */
     --media-min: 20em; /* 320px */
     --media-small-desktop: 48em; /* 768px */
@@ -72,7 +79,7 @@ html {
 
 body {
     background-color: var(--white);
-    font-size: var(--body-fsz-m);
+    font-size: var(--body-fsz);
     line-height: var(--body-lht);
     overflow-x: hidden;
     font-family: var(--body-ffam);
@@ -116,7 +123,8 @@ h4,
 h5, 
 h6 {
   font-family: var(--font-playfair_display);
-    font-weight: var(--x-bold);
+  font-weight: var(--bold);
+  line-height: var(--heading-lht);
 }
 
 strong {

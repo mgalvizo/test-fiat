@@ -1,6 +1,6 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
 import {
   StyledNavigation,
   StyledNavigationContent,
@@ -10,17 +10,17 @@ import {
   StyledNavigationHamburguerIcon,
   StyledNavigationHamburguerBar,
   StyledNavigationMobileList,
-} from "@/_styled/Navigation";
-import { menuItems } from "@/_dev-data/menu-items";
+} from '@/_styled/Navigation';
+import { menuItems } from '@/_dev-data/menu-items';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function toggleNavigationHandler() {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen(prevIsOpen => !prevIsOpen);
   }
 
-  const renderedItems = menuItems.map((item) => {
+  const renderedItems = menuItems.map(item => {
     const { id, text, href, className } = item;
 
     return (
@@ -37,7 +37,7 @@ const Navigation = () => {
         <StyledNavigationHamburguer>
           <StyledNavigationHamburguerIcon
             onClick={toggleNavigationHandler}
-            className={`${isOpen ? "open" : ""}`}
+            className={`${isOpen ? 'open' : ''}`}
           >
             <StyledNavigationHamburguerBar />
             <StyledNavigationHamburguerBar />

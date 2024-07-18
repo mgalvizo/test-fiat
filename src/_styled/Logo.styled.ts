@@ -1,6 +1,6 @@
-"use client";
-import styled from "styled-components";
-import { StyledComponent, StyledComponentContent } from "./UI/Component";
+'use client';
+import styled from 'styled-components';
+import { StyledComponent, StyledComponentContent } from './UI/Component';
 
 const StyledLogo = styled(StyledComponent)`
   position: absolute;
