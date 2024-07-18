@@ -4,9 +4,11 @@ import { Lato, Playfair_Display } from "next/font/google";
 import StyledComponentsRegistry from "@/_lib/registry";
 import {
   StyledRootLayout,
-  StyledRootLayoutStripe,
-  StyledRootLayoutStripeContent,
+  StyledRootLayoutHeader,
+  StyledRootLayoutHeaderContent,
 } from "@/_styled/RootLayout.styled";
+import Logo from "@/_components/Logo";
+import Navigation from "@/_components/Navigation";
 import GlobalStyle from "@/_styled/global-style";
 
 const lato = Lato({
@@ -41,11 +43,15 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
         <StyledComponentsRegistry>
           <GlobalStyle />
           <StyledRootLayout>
-            <StyledRootLayoutStripe>
-              <StyledRootLayoutStripeContent>
-                {children}
-              </StyledRootLayoutStripeContent>
-            </StyledRootLayoutStripe>
+            {/* Begins header stripe */}
+            <StyledRootLayoutHeader>
+              <StyledRootLayoutHeaderContent>
+                <Logo />
+                <Navigation />
+              </StyledRootLayoutHeaderContent>
+            </StyledRootLayoutHeader>
+            {/* Ends header stripe */}
+            {children}
           </StyledRootLayout>
         </StyledComponentsRegistry>
       </body>

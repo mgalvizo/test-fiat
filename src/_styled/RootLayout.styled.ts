@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import { StyledStripe, StyledStripeContent } from "./UI/Stripe";
+import { StyledStripe, StyledStripeContent } from "@/_styled/UI/Stripe";
 
 const StyledRootLayout = styled.div`
   min-height: 100vh;
@@ -12,6 +12,7 @@ const StyledRootLayout = styled.div`
   overflow-x: hidden;
   background: var(--gradient);
   position: relative;
+  padding-bottom: calc(var(--web-padding-xl2) * 3);
 
   &::after {
     position: absolute;
@@ -19,20 +20,26 @@ const StyledRootLayout = styled.div`
     left: 0;
     display: block;
     width: 100%;
-    height: var(--menu-height);
+    height: var(--menu-ht);
     background-color: var(--white);
     content: "";
   }
 `;
 
-const StyledRootLayoutStripe = styled(StyledStripe)`
+const StyledRootLayoutHeader = styled(StyledStripe)`
   z-index: 99999999;
+  position: relative;
 `;
 
-const StyledRootLayoutStripeContent = styled(StyledStripeContent)``;
+const StyledRootLayoutHeaderContent = styled(StyledStripeContent)`
+  // 768px
+  @media only screen and (min-width: 48em) {
+    position: relative;
+  }
+`;
 
 export {
   StyledRootLayout,
-  StyledRootLayoutStripe,
-  StyledRootLayoutStripeContent,
+  StyledRootLayoutHeader,
+  StyledRootLayoutHeaderContent,
 };

@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --black: #000000;
     --blue: #4957d1;
-    --gradient: linear-gradient(170deg, var(--red) 0%, var(--red) 50%, var(--blue) 50%, var(--blue) 100%);
+    --gradient: linear-gradient(170deg, var(--blue) 0%, var(--blue) 55%, var(--red) 55%, var(--red) 100%);
     /* HEADINGS */
     --heading-ffam: var(--font-playfair_display);
     --heading-fsz-s: 1.4rem;
@@ -39,7 +39,12 @@ const GlobalStyle = createGlobalStyle`
     --web-margin-xl: 32px;
     --web-margin-xl2: 40px;
     /* MISC*/
-    --menu-height: 50px;
+    --menu-ht: 50px;
+    --hamburguer-wt: 35px;
+    --hamburguer-icon-ht: 15px;
+    --hamburguer-bar-wt: 18px; 
+    --hamburguer-bar-ht: 3px; 
+    --logo-sz: 119px;  
     /* MEDIA */
     --media-min: 20em; /* 320px */
     --media-small-desktop: 48em; /* 768px */

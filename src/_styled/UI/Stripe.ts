@@ -6,6 +6,8 @@ const StyledStripe = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-right: var(--web-padding-m);
+  padding-left: var(--web-padding-m);
 `;
 
 const StyledStripeContent = styled.div`
