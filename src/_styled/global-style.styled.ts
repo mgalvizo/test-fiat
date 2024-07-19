@@ -56,6 +56,18 @@ const GlobalStyle = createGlobalStyle`
     --option-sz: 30px;
     --chevron-wt: 13px;
     --chevron-ht: 13px;
+    --radio-ht-s: 50px;
+    --radio-ht-m: 40px;
+    --forma-pago-wt: 652px;
+    --textarea-ht-s: 75px;
+    --textarea-ht-m: 170px;
+    --checkbox-sz: 24px;
+    --checkbox-border-color: #959595;
+    --checkbox-fsz: 1.3rem;
+    --checkmark-wt: 4px;
+    --checkmark-ht: 9px;
+    --btn-ht: 45px;
+    --btn-wt: 135px;
     /* MISC*/
     --menu-ht: 50px;
     --hamburguer-wt: 35px;
@@ -143,6 +155,18 @@ h6 {
 
 strong {
   font-weight: var(--bold);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 // 768px

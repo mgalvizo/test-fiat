@@ -66,11 +66,23 @@ const distribuidor_options = [
   { id: uuidv4(), text: 'Comercial Automotriz', value: 'comercial automotriz' },
 ];
 
+const plazo_options = [
+  { id: uuidv4(), text: '6 Meses', value: '6' },
+  { id: uuidv4(), text: '12 Meses', value: '12' },
+  { id: uuidv4(), text: '18 Meses', value: '18' },
+  { id: uuidv4(), text: '24 Meses', value: '24' },
+  { id: uuidv4(), text: '36 Meses', value: '36' },
+  { id: uuidv4(), text: '48 Meses', value: '48' },
+  { id: uuidv4(), text: '60 Meses', value: '60' },
+  { id: uuidv4(), text: '72 Meses', value: '72' },
+];
+
 export {
   modelo_options,
   version_options,
   estado_options,
   distribuidor_options,
+  plazo_options,
 };
 
 export type { SelectOption };

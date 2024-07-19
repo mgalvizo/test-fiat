@@ -8,7 +8,8 @@ import {
   StyledDropdownOption,
 } from '@/_styled/Form/Dropdown.styled';
 import { SelectOption } from '@/_dev-data/select-options';
-import chevron from '@/../public/chevron-down.svg';
+import { IoChevronDownSharp } from 'react-icons/io5';
+import { IoChevronUpSharp } from 'react-icons/io5';
 
 interface DropdownProps {
   id: string;
@@ -71,7 +72,7 @@ const Dropdown = ({ id, options }: DropdownProps) => {
     <StyledDropdown ref={divElement} id={id}>
       <StyledDropdownPanel onClick={handleClick}>
         {dropdownSelection?.text || 'Selecciona'}
-        <Image src={chevron} alt="chevron" />
+        {!isOpen ? <IoChevronDownSharp /> : <IoChevronUpSharp />}
       </StyledDropdownPanel>
       {isOpen && (
         <StyledDropdownOptions>{renderedOptions}</StyledDropdownOptions>

@@ -48,7 +48,34 @@ const StyledAppFormTag = styled.form`
   row-gap: var(--web-margin-xl2);
 `;
 
-const StyledAppFormFieldset = styled.fieldset``;
+const StyledAppFormFieldset = styled.fieldset`
+  .forma_contacto {
+    margin-top: var(--web-margin-xl);
+    margin-bottom: var(--web-margin-s);
+    text-align: left;
+  }
+
+  .tipo_pago_heading {
+    margin-bottom: var(--web-margin-s);
+    text-align: left;
+  }
+
+  &.privacidad_enviar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--web-margin-xl);
+    margin-top: var(--web-margin-s);
+  }
+
+  // 768px
+  @media only screen and (min-width: 48em) {
+    &.privacidad_enviar {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: var(--web-margin-xl);
+    }
+  }
+`;
 
 const StyledAppFormLegend = styled.legend`
   width: 100%;
@@ -70,6 +97,37 @@ const StyledAppFormControlsWrapper = styled.div`
     grid-row-gap: var(--web-margin-xl);
   }
 
+  &.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &.forma_pago {
+    max-width: var(--forma-pago-wt);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.tipo_pago {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: var(--web-margin-xl);
+  }
+
+  &.enganche_plazo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--web-margin-xl);
+  }
+
+  &.privacidad_promociones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--web-margin-m);
+  }
+
   // 768px
   @media only screen and (min-width: 48em) {
     &.datos_personales {
@@ -84,6 +142,15 @@ const StyledAppFormControlsWrapper = styled.div`
       grid-template-columns: repeat(2, 1fr);
       column-gap: calc(var(--web-margin-xl) * 2);
       row-gap: calc(var(--web-margin-xl2) + var(--web-margin-s));
+    }
+
+    &.enganche_plazo {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        flex: 1;
+      }
     }
   }
 

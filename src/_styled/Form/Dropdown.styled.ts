@@ -24,7 +24,7 @@ const StyledDropdownPanel = styled.div`
   cursor: pointer;
   overflow: hidden;
 
-  img {
+  svg {
     width: var(--chevron-wt);
     height: var(--chevron-ht);
     position: absolute;
