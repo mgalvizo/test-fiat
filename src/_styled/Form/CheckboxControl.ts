@@ -22,6 +22,8 @@ const StyledCheckbox = styled.div`
 `;
 
 const StyledCheckboxControl = styled.div`
+  font-family: var(--font-lato);
+
   label {
     display: flex;
     justify-content: start;
