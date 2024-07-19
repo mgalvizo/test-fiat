@@ -10,7 +10,7 @@ import {
   StyledNavigationHamburguerIcon,
   StyledNavigationHamburguerBar,
   StyledNavigationMobileList,
-} from '@/_styled/Navigation';
+} from '@/_styled/Navigation.styled';
 import { menuItems } from '@/_dev-data/menu-items';
 
 const Navigation = () => {

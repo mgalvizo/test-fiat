@@ -61,13 +61,33 @@ const StyledHeading = styled.h1`
     ${({ as }) =>
     as === 'h4' &&
     css`
-      font-size: var(--heading-m);
+      color: var(--red);
+      font-style: italic;
+      font-size: var(--heading-fsz-4-s);
+      text-align: center;
+      font-weight: var(--x-bold);
+
+      // 768px
+      @media only screen and (min-width: 48em) {
+        font-size: var(--heading-fsz-4-m);
+      }
+
+      // 1024px
+      @media only screen and (min-width: 64em) {
+        font-size: var(--heading-fsz-4-l);
+      }
     `}
 
     ${({ as }) =>
     as === 'h5' &&
     css`
-      font-size: var(--heading-s);
+      color: var(--black);
+      font-size: var(--heading-fsz-5);
+      font-family: var(--font-lato);
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: var(--web-margin-xl2);
     `}
 `;
 

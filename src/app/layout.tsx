@@ -9,7 +9,7 @@ import {
 } from '@/_styled/RootLayout.styled';
 import Logo from '@/_components/Logo';
 import Navigation from '@/_components/Navigation';
-import GlobalStyle from '@/_styled/global-style';
+import GlobalStyle from '@/_styled/global-style.styled';
 
 const lato = Lato({
   subsets: ['latin-ext'],

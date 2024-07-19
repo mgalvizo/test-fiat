@@ -22,13 +22,20 @@ const GlobalStyle = createGlobalStyle`
     --heading-fsz-1: 1.1rem;
     --heading-fsz-2-s: 1.1rem;
     --heading-fsz-2-m: 1.2rem;
-    --heading-fsz-3-s: 4.0rem;
-    --heading-fsz-3-m: 7.7rem;
-    --heading-fsz-3-l: 11.0rem;
-    --heading-lht: 1;
     --h2-dec-line-wt-m: 64px;
     --h2-dec-line-wt-l: 55px;
     --h2-dec-line-ht-m: 1px;
+    --heading-fsz-3-s: 4.0rem;
+    --heading-fsz-3-m: 7.7rem;
+    --heading-fsz-3-l: 11.0rem;
+    --heading-fsz-4-s: 2.9rem;
+    --heading-fsz-4-m: 3.9em;
+    --heading-fsz-4-l: 4.3rem;
+    --h4-dec-line-wt-m: 94px;
+    --h4-dec-line-wt-l: 170px;
+    --h4-dec-line-ht-m: 1px;
+    --heading-fsz-5: 1.1rem;
+    --heading-lht: 1;
     /* SPACING */
     --web-padding-xs: 4px;
     --web-padding-s: 8px;
@@ -42,6 +49,13 @@ const GlobalStyle = createGlobalStyle`
     --web-margin-l: 24px;
     --web-margin-xl: 32px;
     --web-margin-xl2: 40px;
+    /* FORM */
+    --label-lht: 1;
+    --input-sz: 40px;
+    --dropdown-ht: 300px;
+    --option-sz: 30px;
+    --chevron-wt: 13px;
+    --chevron-ht: 13px;
     /* MISC*/
     --menu-ht: 50px;
     --hamburguer-wt: 35px;

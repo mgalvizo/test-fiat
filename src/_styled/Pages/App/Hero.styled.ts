@@ -1,14 +1,14 @@
 'use client';
 import styled from 'styled-components';
-import { StyledStripe, StyledStripeContent } from '@/_styled/UI/Stripe';
-
-const StyledApp = styled.main``;
+import { StyledStripe, StyledStripeContent } from '@/_styled/UI/Stripe.styled';
 
 const StyledAppHero = styled(StyledStripe)`
   padding-top: var(--web-padding-l);
 
   // 768px
   @media only screen and (min-width: 48em) {
+    position: relative;
+    z-index: 1;
     padding-top: var(--web-padding-xl);
   }
 `;
@@ -83,9 +83,4 @@ const StyledAppHeroHeading2Text = styled.span`
   }
 `;
 
-export {
-  StyledApp,
-  StyledAppHero,
-  StyledAppHeroContent,
-  StyledAppHeroHeading2Text,
-};
+export { StyledAppHero, StyledAppHeroContent, StyledAppHeroHeading2Text };

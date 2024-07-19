@@ -1,5 +1,8 @@
-import styled from "styled-components";
-import { StyledComponent, StyledComponentContent } from "./UI/Component";
+import styled from 'styled-components';
+import {
+  StyledComponent,
+  StyledComponentContent,
+} from '@/_styled/UI/Component.styled';
 
 const StyledNavigation = styled(StyledComponent)`
   // 768px
